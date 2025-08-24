@@ -3,15 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Akshay S Mayya - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <center>
-    <img src="mypic.jpeg"/>
-    <h1> Akshay S Mayya </h1>
-    <h2>Third Sem A section</h2>
-    <h3>NNM24CS027</h3>
-    <a href="index.html">RAJAHAMSA,Kulal bhavan ,surathkal mangalore</a>
-    </center>
+    <div class="card">
+        <img src="mypic.jpeg" alt="Akshay S Mayya" class="profile-img">
+        <h1>Akshay S Mayya</h1>
+        <h2>Third Sem A Section</h2>
+        <h3>NNM24CS027</h3>
+        <a href="index.html" class="address-link">
+            RAJAHAMSA, Kulal Bhavan,<br> Surathkal, Mangalore
+        </a>
+    </div>
+    <style>
+        body {
+    font-family: 'Courier New', Courier, monospace;
+    background: url(back2.png) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: #2a2c28;
+    color: #f6f8f8;
+    border-radius: 25px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    padding: 32px 28px 24px 28px;
+    max-width: 340px;
+    width: 90%;
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 25px;
+    object-fit: cover;
+    margin-bottom: 18px;
+}
+
+h1 {
+    background: #73AD21;
+    color: rgb(240, 233, 233);
+    border-radius: 25px;
+    text-shadow: 2px 2px 2px rgb(17, 64, 206);
+    margin: 12px 0;
+    font-size: 1.6rem;
+    padding: 7px 0;
+}
+
+h2, h3 {
+    color: rgb(240, 233, 233);
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(21, 58, 167);
+    font-size: 1.1rem;
+    margin: 6px 0;
+}
+
+.address-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #73AD21;
+    text-decoration: none;
+    font-size: 1rem;
+    word-wrap: break-word;
+    border: 1px solid #73AD21;
+    padding: 8px 12px;
+    border-radius: 12px;
+    background: rgba(115, 173, 33, 0.08);
+    transition: background 0.2s, color 0.2s;
+}
+
+.address-link:hover {
+    background: #73AD21;
+    color: #fff;
+}
+
+    </style>
 </body>
 </html>
